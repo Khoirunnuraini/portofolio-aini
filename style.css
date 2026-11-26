@@ -1,0 +1,46 @@
+/* =========================================================
+   KHOIRUN NURAINI — Portfolio Custom Stylesheet
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Kustomisasi Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF5F8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F472B6;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #DB2777;
+}
+
+/* Bentuk Blob Organik untuk Foto Profil */
+.profile-blob {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    animation: morphBlob 9s ease-in-out infinite;
+}
+
+@keyframes morphBlob {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+    50% {
+        border-radius: 60% 40% 35% 65% / 55% 60% 40% 45%;
+    }
+}
+
+/* Pola Background Titik Halus */
+.bg-dot-pink {
+    background-image: radial-gradient(#FBCFE8 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+}
